@@ -1,0 +1,43 @@
+{
+  "name": "Site Blocker",
+  "description": "An extension which helps you to restrict acess on any website other than current working website due to not distracting on the work..",
+  "version": "0.0.0.1",
+  "manifest_version": 3,
+  "permissions": ["storage", "tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["bg.PNG"],
+      "matches": ["<all_urls>"],
+      "use_dynamic_url": true
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Limit Distracting Website",
+    "default_icon": {
+      "16": "icons/16icon.png",
+      "32": "icons/32icon.png",
+      "48": "icons/48icon.png",
+      "72": "icons/72icon.png",
+      "128": "icons/128icon.png",
+      "512": "icons/512icon.png"
+    }
+  },
+  "icons": {
+    "16": "icons/16icon.png",
+    "32": "icons/32icon.png",
+    "48": "icons/48icon.png",
+    "72": "icons/72icon.png",
+    "128": "icons/128icon.png",
+    "512": "icons/512icon.png"
+  }
+}
