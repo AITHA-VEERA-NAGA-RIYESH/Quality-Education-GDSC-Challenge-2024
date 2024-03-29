@@ -1,6 +1,6 @@
 # Quality-Education-GDSC-Challenge-2024
 
-#Website Blocker and Pomodoro Timer
+#Distraction Blocker and Pomodoro Timer
 
 This GitHub repository contains a simple yet effective tool designed to enhance productivity by minimizing distractions and fostering focused work sessions. The repository consists of two main components: a website blocker and a Pomodoro timer.
 
